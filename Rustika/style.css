@@ -1,0 +1,333 @@
+body {
+	background-color:#fcfaea;
+	margin:0;
+}
+*{ 
+  -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+  box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+
+/*header je glavni wrapper oko sveka vezano ga pocetak stranice, sastoji se od loga i navigacije*/
+header{
+	display: block;
+	height: 20%;
+	width:100%;
+	padding: 25px 25px 25px 25px;
+	background-color: #fcfaea;
+	border-bottom:5px solid black;
+	position:fixed;
+}
+/*logo je div u kojem senalazi slika, floatan je lijevo 
+i sirina mu je 20% i desna margina 5 sto je ukupno 25%, ostaje 75% za navigaciju*/
+.logo{
+	float:left;
+	width:20%;
+	margin-right: 5%;
+}
+/*ovo da je slika display block je da je responsive,odnosno da se smanjuje kako se smanjuje window*/
+.logo img{
+	display: block;
+	width: 100%;
+}
+/*nav je drugi dio headera i odnosi se nanavigaciju, on je sirine 70% i 
+5% lijeve margine sto daje 75% ukupno i + onih 25% od loga je ukupno 100%
+nav je floatan desno, a logo lijevo a zbog postotaka koje smo podesili se nikad nece potuci za mjesto
+*/
+nav{
+	display: block;
+	width: 70%;
+	margin-left: 5%;
+	float: right;
+}
+/*ovaj text align right je da se sve aligna u desno jer je tako zadano*/
+ul{
+	text-align: right;
+}
+
+li {
+	list-style-type:none;
+	display:inline-block;
+	margin: 0 20px;
+}
+
+a {
+	text-decoration:none;
+	font-weight:bold;
+	color:black;
+	transition:color 1s, text-decoration 1s;
+}
+
+a:hover {
+    color: gray;
+	text-decoration:underline;
+	
+}
+
+#hamburger-menu {
+	display:none;
+}
+
+section {
+	padding-top:120px;
+	padding-left:5%;
+	padding-right:5%;
+	display:block;
+	width:100%;
+	height:1440px;
+}
+
+
+#vrsta_jela {
+	display:block;
+	width:100%;
+	height:120px;
+	padding-top:50px;
+	border-bottom:1px dashed black;
+	font-size:20px;
+}
+
+
+.jelo{
+	display:block;
+	width:100%;
+	height:120px;
+	border-bottom:1px dashed black;
+}
+
+.naziv_jela{
+	vertical-align:middle;
+	transition: color 1s;
+}
+
+.naziv_i_opis{
+	float:left;
+	display:block;
+	width:90%;
+}
+
+.opis_jela {
+	visibility:hidden;
+	opacity:0;
+	color:grey;
+	transition:visibility 0s linear 1s,opacity 1s linear;
+	margin-top:0;
+}
+
+
+.naziv_jela:hover {
+	color:gray;
+}
+
+.naziv_i_opis:hover  + .cijena{
+	color:white;
+	background-color:gray;
+}
+ 
+.naziv_jela:hover  ~ .opis_jela{
+	visibility:visible;
+	opacity:1;
+	transition-delay:0s;
+	float:left;
+}
+
+.cijena {
+	height:80px;
+	margin:20px 0 20px 0;
+	width:10%;
+	text-align:center;
+	padding:10px 0 10px 0;
+	text-align: center;
+	vertical-align: middle;
+	line-height:60px;
+	font-weight:bold;
+	background-color:black;
+	color:white;
+	float:right;
+	transition: color 1s;
+	transition: background-color 1s;
+}
+
+footer {
+	display:block;
+	width:100%;
+	height:200px;
+}
+
+#kontakt {
+	display:block;
+	margin: 2% auto;
+	height:80%;
+	width:20%;
+    
+}
+
+	#kontakt img{
+		width:100%;
+		height:100%;
+	}
+
+@media screen and (max-width: 800px) {
+	
+    .vise_od_800 {
+		display:none;
+	}
+	
+	.vise_od_300{
+		display:none;
+	}
+	
+	#hamburger-menu{
+		display:block;
+		float:right;
+		font-size:40px;
+	}
+	
+	a:hover {
+		text-decoration:none;
+	}
+	
+	#vrsta_jela {
+		font-size:20px;
+		padding-top:25px;
+		
+	}
+	
+	.naziv_i_opis{
+		width:80%;
+	}
+	
+	
+	.cijena{
+		width:20%;
+		
+	}
+	
+	.jelo{
+		font-size:small;
+		
+	}
+	
+	.logo{
+	width:38%;
+	margin-right: 2%;
+	max-height:60px;
+	}
+	
+	nav{
+	width: 58%;
+	margin-left: 2%;
+	}
+	
+	#kontakt {
+		min-width:230px;
+		min-height:200px;
+	}
+	
+}
+
+@media screen and (max-width: 400px) {
+    .vise_od_800 {
+		display:none;
+	}	
+	.vise_od_300{
+		display:none;
+	}	
+	#hamburger-menu{
+		display:block;
+		font-size:30px;
+		float:none;
+		width:10%;
+		margin:0 auto;
+		padding-top: 10px; 
+		
+	}
+	
+	a:hover {
+		text-decoration:none;
+	}
+	
+	#vrsta_jela {
+		font-size:20px;	
+		padding-top:0;
+		height: auto;
+	}
+	
+	.naziv_jela{
+		width:100%;
+	}
+	
+	header {
+		padding: 25px 25px 25px 25px;
+		height: auto;
+		position: relative;
+	}
+	
+	.opis_jela{
+		padding:0;
+		visibility:visible;
+		transition:none;
+		opacity:1;
+		color:black;
+		width:100%;
+		margin:0;
+		height: 20px;
+		line-height:20px;
+		float:none;
+		display:block;
+	}
+	
+	.cijena {
+		padding:0 ;
+		margin:0;
+		visibility:visible;
+		height:30px;
+		background-color:#fcfaea;
+		transition:none;
+		color:black;
+		float:none;
+		width:100%;
+		text-align:left;
+		vertical-align:middle;
+		line-height:30px;
+		float:left;
+		display:block;
+		margin-bottom:12.45px;
+	}
+	
+	.jelo{
+		font-size:x-small;
+	}
+	
+	.logo{
+	display:block;
+	float:none;
+	width: 70%;
+	margin: 0 auto;
+	
+    }
+	
+	.logo img{
+	
+	}
+	
+	
+	#kontakt {
+		min-width:230px;
+		min-height:200px;
+	}
+	
+	nav{
+	width: 58%;
+	margin-left: 2%;
+	display:none;
+	}
+	section{
+height: auto;
+		padding-top: 0;
+	}
+}
+
+
+
+

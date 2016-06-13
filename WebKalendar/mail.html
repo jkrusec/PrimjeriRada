@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		Dogodilo se na današnji dan.
+		</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="style_login.css">
+	</head>
+	<body>	
+		<header>
+			<nav>		
+				<ul>
+					<li><a href="index.html" >Početna</a></li>
+					<li><a href="mail.html" >Pošalji e-mail</a></li>
+					<li><a href="login.html" >Log in</a></li>
+				</ul>
+			</nav>	
+		</header>
+		<article>
+			<img src="hourglass.jpg" id="left" />
+				<div id="center">
+					<form method="POST" action="mailto:jkrusec@etfos.hr?subject=Prijedlog" enctype="text/plain">
+						<p>Vaše ime: </p><input type="text" name="Ime" size="10"> <br>
+						<p>Vaše prezime: </p><input type="text" name="Prezime" size="10"> <br> 
+						<p> Vaš prijedlog: </p> <br>
+						<textarea rows="4" name="Prijedlog" cols="30">
+						</textarea><br>
+						<br>
+						<input type="submit" value="Pošalji" name="btn_send">
+						<input type="reset" value="Izbriši" name="btn_delete">
+					</form>
+				</div>
+			<img src="hourglass.jpg" id="right"/>
+		</article>
+		<footer>
+			<div id="contact">
+			<p>Napravljeno by Josip Krušec</p>
+			<p>Projekt Internet programiranje</p>
+			<p>Kontakt : jkrusec@etfos.hr</p>
+			</div>
+		</footer>
+	</body>
+</html>

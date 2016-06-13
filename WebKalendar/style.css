@@ -1,0 +1,107 @@
+body{
+	margin:0;
+}
+
+header {
+	display:block;
+}
+
+ul {
+	text-align:center;
+	padding-left:0;
+}
+
+li {
+	display:inline;
+	margin:0 10%;
+}
+
+
+a {
+	text-decoration:none;
+	font-family:"Lucida Console", Times;
+	color:gray;
+	transition: color 1s;
+}
+
+a:hover {
+	color:white;
+}
+
+nav {
+	display:block;
+	background-color: black;
+	padding:2.5%
+}
+
+article{
+	display:block;
+	height:auto;
+}
+
+#left {
+	display:block;
+	float:left;
+	width:20%;
+	border-right:thick solid black;
+	border-bottom:thick solid black;
+}
+
+#right {
+	display:block;
+	float:right;
+	width:20%;
+	border-left:thick solid black;
+	border-bottom:thick solid black;
+}
+
+#center {
+	display:block;
+	width: 53.26%;
+	float:left;
+}
+
+#heading1_up{
+	font-family:"Lucida Console", Times;
+	margin-bottom:0;
+
+}
+
+footer {
+	clear:both;
+	display:block;
+	width:100%;
+	background-color:black;
+	text-align:center;
+	
+}
+#contact {
+	display:inline-block;
+	margin:0 auto;
+	padding-top:0.95%;
+	padding-bottom:0.96%;
+}
+
+#contact p{
+	color:gray;
+	font-family:"Lucida Console", Times;
+}
+
+#heading2{
+	font-family:"Lucida Console", Times;
+	margin-bottom:0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,18 @@
+Responsive dio -
++Smannjiti slova za tablet verziju
++Smanjiti jos vise slova za mobilnu verziju
+?Pogledati sto se dogodi na hover nazova jela sa nekim opisima jela
++hamburger menu napraviti sa htmlom ili cssom a ne sa slikom
++logo urediti d ne bud epremal na mobilnoj i tablet verziji
++na mobilnoj verzji pis jela uvijek vidljiv, a cijena vise nije desno i nema pozadinu vec se nalazi ispod opisa jela
++opis cijena i naziv su 100% na mobilnoj verziji
++linkovi transition i underline
++na mobilnoj verziji na vrhu je logo sa 100% sirine a ispod njega je centriran hamburger meni, a ispod njega ostalo
++cijene cim si preuske povecai sirinu
++maknit hover na mob. verziji za hamburger meni(da ne bude underline)
++dat padding JELA S ROŠTILJA(razlicito za mob. i tablet verziju)
+u mob. verziji sliku u hamb. pozicionirat bez velikih margina(maknuti float i maknuti height od 50%)
++u tablet verziji veæ na 800 pokazati hamb. 
++napravit sa divovima kao za prvo jela, tako za sve
+
+
